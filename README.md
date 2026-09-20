@@ -26,8 +26,8 @@
 | 공정 | Intel 7 / Chiplet | Intel 10nm SuperFin / Intel 7 | Intel 7 | Intel 7 |
 
 **2026년 주요 업데이트:**
-- Agilex 9 Direct RF-Series: 40% 연산 밀도 향상, 45% 증가한 논리/DSP 밀도, 64Gsps 주파수 대역 RF 통합(AGRW039 엔지니어링 샘플 공개, 생산 물량은 Q3 2026).
-- Quartus Prime Pro 26.1.1: Agilex 7 M-Series에 **DDR5-6400 / LPDDR5-6400** 지원(최대 204.8GB/s 대역폭), Agilex 3에 LPDDR5 지원 추가.
+- Agilex 9 Direct RF-Series: <br>40% 연산 밀도 향상, <br>45% 증가한 논리/DSP 밀도, <br>64Gsps 주파수 대역 RF 통합(AGRW039 엔지니어링 샘플 공개, <br>생산 물량은 Q3 2026).
+- Quartus Prime Pro 26.1.1: <br>Agilex 7 M-Series에 **DDR5-6400 / LPDDR5-6400** 지원(최대 204.8GB/s 대역폭), <br>Agilex 3에 LPDDR5 지원 추가.
 
 ---
 
