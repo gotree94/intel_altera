@@ -8,6 +8,7 @@
 - **Altera**는 세계 최대의 순수 FPGA(pure-play) 솔루션 제공 업체로, Intel에서 분사하여 독립 기업으로 운영 중입니다.
 - 전체 Agilex 포트폴리오(Agilex 3 / 5 / 7 / 9)를 **단일 개발 흐름(Quartus® Prime)** 으로 지원합니다.
 - 2026년 주요 테마: <br> **Edge AI(결정적 저지연 추론)**, <br> **RISC-V 기반 Nios® V**, <br> **DDR5/LPDDR5 메모리 확장**, <br> **Open FPGA Stack(OFS)**, <br> **Chiplet 기반 Direct RF 솔루션**입니다.
+- 교육용 보급대응: **DE23-Lite**(Agilex 3) 1개 보드로 논리설계·DSP·엣지 AI(Tensor Block)를 아우르는 교육 가능 — 상세는 [5장](#5-de23-lite-개발-키트--agilex-3-ai-tensor-block-교육) 참조.
 
 ---
 
@@ -130,10 +131,30 @@
 
 ---
 
-## 5. 참고 자료
+## 5. DE23-Lite 개발 키트 – Agilex 3 AI Tensor Block 교육
+
+- **DE23-Lite**(Terasic, P0807): Agilex 3 C-Series **A3CZ135BB18AE7S** 탑재 교육용·저비용 보드(DE10-Lite 후속). 논리설계, 디지털 신호처리(DSP), 컴퓨터 구조 수준부터 AI 기초 실습까지 커리큘럼 구성 가능.
+- **주요 사양**: 135,110 LE, 6.89Mb M20K + 1.4Mb MLAB, 368×(18×19) 곱셈기 / 184개 DSP 블록, 64MB SDRAM(x32), **HDMI 출력(ADV7513)**, USB-C(USB Blaster III) + UART, 12비트 8채널 ADC, 2×20 GPIO, 10×LED / 10×Slide SW / 4×버튼 / 7-Segment.
+
+### 5.1 AI Tensor Block 지원 여부
+- Agilex 3 C-Series는 **AI Tensor Block을 탑재한 저비용(cost-optimized) FPGA**로, 엣지 AI용으로 설계된 최초 보급형 제품군입니다.
+- 각 DSP 블록 → AI Tensor Block 구성: **INT8×INT8 10개 곱셈의 dot-product 2조합**(10요소 벡터 내적), 텐서 모드에서 FP32/FP16/FP19/BFLOAT16 부동소수점, 텐서 고정소수점·텐서 누적 연산 지원(Native AI Optimized DSP IP, Quartus 25.1).
+- 연산 성능: 최대 약 **2.5~3.6 INT8 TOPS**(FPGA AI Suite 기준 ~2.6 TOPS) — 교육용 소형 CNN 추론(MNIST급, 소형 이미지 분류 등) 데모에 충분한 수준.
+
+### 5.2 교육 활용 형태
+- **FPGA AI Suite** 연동: PyTorch / TensorFlow / Caffe / OpenVINO 모델을 비트스트림으로 push-button 변환 가능(학습 → FPGA 추론 실습).
+- 단계별 커리큘럼: 논리설계(LED/SW/7-Segment) → DSP/영상처리(HDMI·SDRAM) → 엣지 AI(Tensor Block) 순차 진행 권장.
+- **제한점**: 최상위 Agilex 7/5 대비 TOPS 규모가 작아 대형 모델 학습·추론에는 부적합 → "AI Tensor Block 원리·소형 추론 실습" 수준의 교육용으로 접근해야 합니다.
+
+---
+
+## 6. 참고 자료
 - Altera FPGA 메인 페이지: https://www.altera.com/fpga
 - Nios V Processor Developer Center: https://www.altera.com/design/guidance/nios-v-developer
 - FPGA AI Suite: https://www.altera.com/products/development-tools/fpga-ai-suite
 - Open FPGA Stack: https://www.altera.com/products/development-tools/open-fpga-stack
 - Quartus Prime: https://www.altera.com/products/development-tools/quartus
 - Agilex 5: https://www.altera.com/products/fpga/agilex/5
+- Agilex 3 FPGAs and SoCs Device Overview (Altera Docs): https://docs.altera.com/r/docs/817231/current
+- Variable Precision DSP Blocks User Guide – Agilex 3 FPGAs and SoCs (25.1): https://docs.altera.com/r/docs/849313/25.1
+- DE23-Lite Development Kit (Terasic): https://www.terasic.com.tw/cgi-bin/page/archive.pl?No=1383
