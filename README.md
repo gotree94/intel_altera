@@ -21,8 +21,8 @@
 | 트랜시버 | 최대 58Gbps (Direct RF: 64Gsps ADC/DAC) | 최대 116Gbps | 최대 28Gbps | 최대 12.5Gbps |
 | 인터페이스 | PCIe 4.0 / 400GbE | PCIe 4.0/5.0, CXL, 400GbE | PCIe 4.0 / 25GbE | PCIe 3.0 / 10GbE |
 | 메모리 인터페이스 | DDR4, QDR IV | DDR4/5, LPDDR5, QDR IV | DDR4/5, LPDDR4/5 | LPDDR4 |
-| 프로세서 | Quad-Core Arm Cortex-A53 | Quad-Core Arm Cortex-A53 | 듀얼 Cortex-A76 + 듀얼 Cortex-A55 | 듀얼 Cortex-A55 |
-| AI/ DSP | Variable-Precision DSP | Variable-Precision DSP | **AI Tensor Block 탑재 (최대 152 TOPS INT8)** | AI Tensor Block 탑재 |
+| 프로세서 | Quad-Core Arm Cortex-A53 | Quad-Core <br>Arm Cortex-A53 | 듀얼 Cortex-A76 <br>+ 듀얼 Cortex-A55 | 듀얼 Cortex-A55 |
+| AI/ DSP | Variable-Precision DSP | Variable-Precision DSP | **AI Tensor Block 탑재 <br>(최대 152 TOPS INT8)** | AI Tensor Block 탑재 |
 | 공정 | Intel 7 / Chiplet | Intel 10nm SuperFin / Intel 7 | Intel 7 | Intel 7 |
 
 **2026년 주요 업데이트:**
