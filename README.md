@@ -18,7 +18,7 @@
 | 대상 | 초고성능 RF/항공·방산 | 최고 성능(데이터센터, 통신) | 미드레인지(성능/전력 최적화) | 저전력·저비용 |
 | Logic Elements | 1.4M – 2.7M | 573k – 4M | 50k – 650k | 25k – 135k |
 | 메모리 | 최대 32GB HBM2e 옵션 | 최대 485Mb (+HBM2e) | 최대 69Mb | 최대 8.3Mb |
-| 트랜시버 | 최대 58Gbps (Direct RF: 64Gsps ADC/DAC) | 최대 116Gbps | 최대 28Gbps | 최대 12.5Gbps |
+| 트랜시버 | 최대 58Gbps <br>(Direct RF: 64Gsps ADC/DAC) | 최대 116Gbps | 최대 28Gbps | 최대 12.5Gbps |
 | 인터페이스 | PCIe 4.0 / 400GbE | PCIe 4.0/5.0, CXL, 400GbE | PCIe 4.0 / 25GbE | PCIe 3.0 / 10GbE |
 | 메모리 인터페이스 | DDR4, QDR IV | DDR4/5, LPDDR5, QDR IV | DDR4/5, LPDDR4/5 | LPDDR4 |
 | 프로세서 | Quad-Core Arm Cortex-A53 | Quad-Core <br>Arm Cortex-A53 | 듀얼 Cortex-A76 <br>+ 듀얼 Cortex-A55 | 듀얼 Cortex-A55 |
