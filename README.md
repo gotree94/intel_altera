@@ -7,7 +7,7 @@
 
 - **Altera**는 세계 최대의 순수 FPGA(pure-play) 솔루션 제공 업체로, Intel에서 분사하여 독립 기업으로 운영 중입니다.
 - 전체 Agilex 포트폴리오(Agilex 3 / 5 / 7 / 9)를 **단일 개발 흐름(Quartus® Prime)** 으로 지원합니다.
-- 2026년 주요 테마: **Edge AI(결정적 저지연 추론)**, **RISC-V 기반 Nios® V**, **DDR5/LPDDR5 메모리 확장**, **Open FPGA Stack(OFS)**, **Chiplet 기반 Direct RF 솔루션**입니다.
+- 2026년 주요 테마: <br> **Edge AI(결정적 저지연 추론)**, <br> **RISC-V 기반 Nios® V**, <br> **DDR5/LPDDR5 메모리 확장**, <br> **Open FPGA Stack(OFS)**, <br> **Chiplet 기반 Direct RF 솔루션**입니다.
 
 ---
 
